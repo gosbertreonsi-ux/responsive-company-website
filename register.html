@@ -26,6 +26,7 @@
         }
 
         .auth-container {
+            position: relative;
             background: rgba(255, 255, 255, 0.06);
             backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -36,6 +37,31 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
 
+        /* Back Arrow Styling */
+        .back-arrow {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.3s ease;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .back-arrow:hover {
+            color: var(--secondary);
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(-3px);
+        }
+
         .logo {
             font-size: 26px;
             font-weight: bold;
@@ -43,6 +69,7 @@
             text-align: center;
             margin-bottom: 8px;
             letter-spacing: 1px;
+            margin-top: 10px; /* Space for the arrow */
         }
 
         h2 {
@@ -122,13 +149,16 @@
 <body>
 
     <div class="auth-container">
+        <!-- Back to Home Arrow -->
+        <a href="index.html" class="back-arrow" title="Back to Home">&larr;</a>
+
         <div class="logo">LeeTech</div>
         <h2>Create your trial account</h2>
 
         <form action="#">
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="gosbert renatus" required>
+                <input type="text" id="name" placeholder="gosbert reonsi" required>
             </div>
 
             <div class="form-group">
