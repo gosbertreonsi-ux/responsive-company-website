@@ -950,6 +950,10 @@ body.dark .client h4{
     box-shadow: 0 10px 30px rgba(0,0,0,.5);
 }
 
+.price-card h3{
+    color: rgb(179, 170, 170);
+}
+
 .price-card:hover{
     transform: translateY(-12px);
     box-shadow: 0 20px 45px rgba(0,0,0,.10);
